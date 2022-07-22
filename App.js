@@ -63,9 +63,9 @@ const Stack = createStackNavigator();
 const rootStack = createStackNavigator();
 import { FullPostTool, CheckIn, PhotoUploader, LiveStream } from './screens/PostTools/'
 import { Platform } from 'react-native';
-import CameraRoll from '@react-native-community/cameraroll'
 import { BASE_URL, STATUSBAR_HEIGHT } from './constants'
 import SeenVideos from './screens/WatchTab/SeenVideos';
+import { get } from 'lodash';
 
 
 axios.defaults.baseURL = BASE_URL
@@ -133,6 +133,7 @@ const MainTab = () => {
 		showIcon: true,
 		showLabel: false,
 	}
+	
 	return (
 		<Tab.Navigator tabBarOptions={navigationOptions}>
 			<Tab.Screen

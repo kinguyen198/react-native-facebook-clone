@@ -25,7 +25,7 @@
     ],
     "ios": {
       "config": {
-        "googleMapsApiKey":"AIzaSyD1C4ESn8sDcD6f0nzWw9Oaw5syCwU43rw"
+        "googleMapsApiKey": "AIzaSyD1C4ESn8sDcD6f0nzWw9Oaw5syCwU43rw"
       },
       "supportsTablet": true,
       "bundleIdentifier": "com.vucms.map",
@@ -42,6 +42,9 @@
       "package": "com.rozy.android",
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
-    }
-  }
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "ROZY",
+  "name": "rozy"
 }

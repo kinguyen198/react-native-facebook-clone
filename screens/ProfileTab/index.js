@@ -37,6 +37,7 @@ class index extends PureComponent {
         const { user, highlightPhotos, profilePosts } = this.props
         if (!user.hasOwnProperty('id')) return <View></View>
         const friends = [...this.props.friends]
+        console.log(user.cover_url)
         return (
             <ScrollView ref="_scrollView" bounces={false} style={styles.container}>
                 <View style={styles.infoWrapper}>
@@ -196,7 +197,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 200,
         borderTopLeftRadius: 10,
-        borderTopRightRadius: 10
+        borderTopRightRadius: 10,
     },
     avatarWrapper: {
         backgroundColor: '#000',
